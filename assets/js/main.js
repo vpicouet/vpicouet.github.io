@@ -4,18 +4,6 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-
-// Array of words
-var words = ['beautiful', 'cool', 'amazing'];
-// Function that executes every 2000 milliseconds
-var t = setInterval(function() {
-  // Random number generator
-  var randomNumber = Math.round( Math.random() * (words.length-1) );
-  // Change the word in the span for a random one in the array of words
-  $('#changing').html( words[ randomNumber ] );
-}, 2000);
-
-
 (function($) {
 
 	skel.breakpoints({

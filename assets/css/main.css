@@ -1,13 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
-@font-face {
-  font-family: 'Vincent';
-  src: url('../fonts/Hijrnotes_PERSONAL_USE_ONLY.ttf')  format('truetype');
-}
-@font-face {
-  font-family: 'Theo';
-  src: url('../fonts/Noteworthy-Lt.woff')  format('truetype');
-}
+
 /*
 	Dimension by HTML5 UP
 	html5up.net | @ajlkn
@@ -128,10 +121,8 @@
 
 	body, input, select, textarea {
 		color: #ffffff;
-		font-family: 'Theo';
-
-/*		font-family: "Source Sans Pro", sans-serif;
-*/		font-weight: 300;
+		font-family: "Source Sans Pro", sans-serif;
+		font-weight: 300;
 		font-size: 1rem;
 		line-height: 1.65;
 	}
@@ -168,8 +159,8 @@
 		font-weight: 600;
 		line-height: 1.5;
 		margin: 0 0 1rem 0;
-/*		text-transform: uppercase;
-*/		letter-spacing: 0.2rem;
+		text-transform: uppercase;
+		letter-spacing: 0.2rem;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -188,46 +179,32 @@
 		}
 
 	h1 {
-		font-size: 4rem;
-		font-family: 'Theo';
+		font-size: 2.25rem;
 		line-height: 1.3;
 		letter-spacing: 0.5rem;
 	}
 
 	h2 {
-		font-size: 2rem;
-		font-family: 'Theo';
+		font-size: 1.5rem;
 		line-height: 1.4;
 		letter-spacing: 0.5rem;
 	}
 
 	h3 {
-		font-size: 1.2rem;
-		font-family: 'Theo';
-
+		font-size: 1rem;
 	}
 
 	h4 {
-		font-size: 6rem;
-		font-family: 'Theo';
-		line-height: 1.3;
-		letter-spacing: 0.5rem;
-		font-family: 'Vincent';
+		font-size: 0.8rem;
 	}
 
 	h5 {
-		font-size: 3rem;
-		line-height: 1.4;
-		letter-spacing: 0.5rem;
-		font-family: 'Vincent';
+		font-size: 0.7rem;
 	}
 
 	h6 {
-		font-size: 2rem;
-		font-family: 'Vincent';
+		font-size: 0.6rem;
 	}
-
-
 
 	@media screen and (max-width: 736px) {
 
@@ -638,7 +615,7 @@
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0;/*avant c'était 0.5*/
+			opacity: 0.5;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -682,11 +659,11 @@
 		.image.main {
 			display: block;
 			margin: 2.5rem 0;
-			width: 100%; 
+			width: 100%;
 		}
 
 			.image.main img {
-				width: 70%; /*avant 100%*/
+				width: 100%;
 			}
 
 		@media screen and (max-width: 736px) {
@@ -1037,7 +1014,6 @@
 			background-color: #ffffff;
 			color: #1b1f22 !important;
 			font-weight: 600;
-			font-family: 'Theo';
 		}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -1099,7 +1075,7 @@
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.1), rgba(19, 21, 25, 0.1)), url("../../images/overlay.png");
+			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
 			background-size: auto, 256px 256px;
 			background-position: center, center;
 			background-repeat: no-repeat, repeat;
@@ -1115,7 +1091,7 @@
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg/background3.jpg");
+			background-image: url("../../images/bg.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1211,10 +1187,10 @@
 		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-/*		background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, transparent 55%);
+		background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, transparent 55%);
 		background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, transparent 55%);
 		background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.25) 25%, transparent 55%);
-		background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, transparent 55%);*/
+		background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, transparent 55%);
 		max-width: 100%;
 		text-align: center;
 	}
@@ -1228,7 +1204,7 @@
 			margin-top: 3.5rem;
 		}
 
-/*			#header > *:before {
+			#header > *:before {
 				content: '';
 				display: block;
 				position: absolute;
@@ -1237,7 +1213,7 @@
 				width: 1px;
 				height: calc(3.5rem + 1px);
 				background: #ffffff;
-			}*/
+			}
 
 		#header > :first-child {
 			margin-top: 0;
@@ -1247,25 +1223,25 @@
 				display: none;
 			}
 
-/*		#header .logo {
+		#header .logo {
 			width: 5.5rem;
 			height: 5.5rem;
 			line-height: 5.5rem;
 			border: solid 1px #ffffff;
 			border-radius: 100%;
-		}*/
+		}
 
 			#header .logo .icon:before {
 				font-size: 2rem;
 			}
 
-/*		#header .content {
+		#header .content {
 			border-style: solid;
 			border-color: #ffffff;
 			border-top-width: 1px;
 			border-bottom-width: 1px;
 			max-width: 100%;
-		}*/
+		}
 
 			#header .content .inner {
 				-moz-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
@@ -1501,7 +1477,7 @@
 			transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
 			padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
 			position: relative;
-			width: 60rem;
+			width: 40rem;
 			max-width: 100%;
 			background-color: rgba(27, 31, 34, 0.85);
 			border-radius: 4px;
