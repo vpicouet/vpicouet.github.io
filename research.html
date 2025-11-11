@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research & Engineering - Vincent Picouet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><a href="index.html">Vincent Picouet</a></div>
+            <ul class="nav-links">
+                <li><a href="research.html">Research</a></li>
+                <li><a href="projects.html">Side Projects</a></li>
+                <li><a href="https://ui.adsabs.harvard.edu/search/p_=0&q=Picouet" target="_blank">Publications</a></li>
+                <li><a href="csv/CV_Picouet.pdf" download>CV</a></li>
+                <li><a href="mailto:vincent@picouet.fr">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Instrument Scientist & Systems Engineer</h1>
+            <p class="subtitle">UV astrophysics instrumentation and suborbital missions</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section id="content" class="section">
+        <div class="container">
+
+
+            <h2>Instrument development</h2>
+
+
+            <!-- Instrument Scientist -->
+            <div class="capability-item">
+                <div class="capability-text">
+                    <h3>Instrument Scientist</h3>
+                    <p>Specialized in UV instrumentation for astronomical observations, with focus on detector characterization, optical calibration, and end-to-end instrument testing for space and suborbital missions.</p>
+                </div>
+                <div class="capability-image">
+                    <img src="image/insturmentation/instrum.jpg" alt="Instrument work" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Systems Engineer -->
+            <div class="capability-item reverse">
+                <div class="capability-text">
+                    <h3>Systems Engineer on suborbital Projects</h3>
+                    <p><strong>Complete project lifecycle experience:</strong></p>
+                    <ul>
+                        <li>Requirements analysis: Develop different science cases based on simulations to derive instrument
+                            equirements and predict observations (<a
+                                href="https://ui.adsabs.harvard.edu/abs/2019MNRAS.489.2417A/abstract" target="_blank">Augustin
+                                19</a>)</li>
+                        <li>Mission concept development: Instrument modeling, trade studies and observation predictions based on
+                            developted generic ETC (<a href="https://github.com/vpicouet/generic-etc" target="_blank">GitHub</a>)
+                        </li>
+                        <!-- <li>System design: Architecture and subsystem design</li> -->
+                        <li>Subsystem development and implementation: Suborbital projects provide opportunities to work across
+                            multiple subsystems, from <a href="https://ui.adsabs.harvard.edu/abs/2025JATIS..11a1206P/abstract"
+                                target="_blank">detectors</a> to <a
+                                href="https://ui.adsabs.harvard.edu/abs/2025JATIS..11b4001P/abstract" target="_blank">cooling
+                                system</a> </li>
+                        <li>Assembly, Integration & Testing: <a
+                                href="https://ui.adsabs.harvard.edu/abs/2020JATIS...6d4004P/abstract" target="_blank">Picouet 20</a>
+                        </li>
+                        <li>Flight operations: <a href="https://iopscience.iop.org/article/10.3847/1538-4365/add15c"
+                                target="_blank">Picouet 2020</a></li>
+                        <li>Data reduction & science: <a href="https://ui.adsabs.harvard.edu/abs/2023A%26A...675A.164P/abstract"
+                                target="_blank">Picouet 23</a>, <a
+                                href="https://ui.adsabs.harvard.edu/abs/2023A%26A...670A..82D/abstract" target="_blank">Desprez &
+                                Picouet 23</a> </li>
+                    </ul>
+                </div>
+                <div class="capability-image">
+                    <img src="image/insturmentation/fireball_moon_mouser_williams.jpeg" alt="FIREBALL instrument" loading="lazy">
+                </div>
+            </div>
+
+            <h2>Software development</h2>
+
+
+
+            <div class="capability-item">
+                <div class="capability-text">
+                    <h3>Generic ETC </h3>
+                    <h4>Instrument modelling for exposure time calculations, trade studies, and instrument/observations optimization</h4>
+                    <p>Exposure time calculator (ETC) & an instrument model, aiming for broader applicability, with a high level of genericity. As others ETC, it estimates the expected SNR and predicts observations to improve the reduction pipeline or adapt
+                    detection strategy, but more importantly, it enables analysis of the evolution of the SNR with all the
+                    instrument/observation parameters, allowing to examine the instrument efficiency, explore the SNR evolution under
+                    different scenarios and run different trade studies. The ETC is linked to an online database to allow any scientist to
+                    add their own spectrograph instrument. The current version already encompasses more than 20 instruments, some with
+                    several channels or configurations. This tool can be valuable for instrument comparisons and trade-off analysis to
+                    either optimize the instrument design or the observation strategy.</p>
+                    <p><a href="https://vpicouet.github.io/pyds9plugin-doc/" target="_blank">Documentation</a> • <a
+                            href="https://github.com/vpicouet/pyds9plugin" target="_blank">GitHub</a></p>
+                </div>
+                <div class="capability-image">
+                    <img src="image/etc.jpg" alt="Data analysis" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Data Analyst -->
+            <div class="capability-item reverse">
+                <div class="capability-text">
+                    <h3>Data reduction for science and instrumentation</h3>
+                    <h4>pyds9plugin plugin</h4>
+                    <p>An interactive data analysis plugin to quantitatively analyze and process astronomical images. Built as an extension to SAOImage DS9,
+                        This highly interactive extension provides tens of image treatments and analysis, that can be generalized automatically to a set
+                        of images to turn the plugin into a multiprocessing pipeline. Its design can be easily
+                        combined with user-written scripts to allow scientists to add their own Python macros,
+                        fitting functions, etc..</p>
+                    <p><a href="https://vpicouet.github.io/pyds9plugin-doc/" target="_blank">Documentation</a> • <a
+                            href="https://github.com/vpicouet/pyds9plugin" target="_blank">GitHub</a></p>
+                </div>
+                <div class="capability-image">
+                    <img src="image/ds9page.jpg" alt="Data analysis" loading="lazy">
+                </div>
+            </div>
+
+
+
+            <!-- Technology Development -->
+            <!-- <div class="capability-item reverse">
+                <div class="capability-text">
+                    <h3>Technology Advancement and AIT</h3>
+                    <p>Suborbital projects provide opportunities to work across multiple subsystems, from <a href="https://ui.adsabs.harvard.edu/abs/2025JATIS..11a1206P/abstract" target="_blank">detectors</a> to <a href="https://ui.adsabs.harvard.edu/abs/2025JATIS..11b4001P/abstract" target="_blank">cooling system</a> to <a href="https://ui.adsabs.harvard.edu/abs/2020JATIS...6d4004P/abstract" target="_blank">optical calibration</a>.
+                    </p>
+                    <!-- <ul> -->
+                        <!-- <li><strong>Detector characterization:</strong> <a href="https://ui.adsabs.harvard.edu/abs/2025JATIS..11a1206P/abstract" target="_blank">Detector publication</a></li>
+                        <li><strong>Cooling systems:</strong> <a href="https://ui.adsabs.harvard.edu/abs/2025JATIS..11b4001P/abstract" target="_blank">Cooling system work</a></li>
+                        <li><strong>Optical calibration instrumentation:</strong> <a href="https://ui.adsabs.harvard.edu/abs/2020JATIS...6d4004P/abstract" target="_blank">Calibration paper</a></li> -->
+                    <!-- </ul> -->
+                <!-- </div>
+                <div class="capability-image">
+                    <img src="image/insturmentation/CAPTURE D'ÉCRAN, LE 2020-01-03 À 15.37.50.JPG" alt="Technology development" loading="lazy">
+                </div>
+            </div> -->
+
+            <!-- Science -->
+            <div class="text-block">
+                <h3>Science Focus</h3>
+                <div class="science-grid">
+                    <div class="science-item">
+                        <h4>Circumgalactic Medium</h4>
+                        <p>Studying the diffuse gas surrounding galaxies to understand galaxy evolution and the cosmic baryon cycle.</p>
+                    </div>
+                    <div class="science-item">
+                        <h4>Star Formation</h4>
+                        <p>Investigating star formation rates and processes through UV observations and multi-wavelength analysis.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Vincent Picouet</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
